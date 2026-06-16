@@ -107,7 +107,7 @@ nav{
 .hero-title{font-family:'Bebas Neue';font-size:clamp(28px,7.2vw,106px);line-height:1;letter-spacing:-2px;color:#fff;white-space:nowrap;text-align:center;position:relative;z-index:2;width:100%;padding:0 40px}
 .hero-avatar{position:relative;z-index:3;width:clamp(260px,32vw,460px);margin-top:-20px}
 .hero-avatar img{width:100%;mix-blend-mode:lighten;filter:drop-shadow(0 0 60px rgba(155,48,255,.5))}
-.hero-sub{font-size:clamp(14px,1.1vw,17px);color:rgba(255,255,255,.6);text-align:center;line-height:1.8;max-width:460px;margin-top:28px;position:relative;z-index:2;opacity:0;transform:translateY(30px)}
+.hero-sub{font-size:clamp(17px,2.3vw,23px);color:#fff;font-weight:500;text-align:center;line-height:1.7;max-width:520px;margin-top:28px;position:relative;z-index:2;opacity:0;transform:translateY(30px)}
 .hero-bottom{position:absolute;bottom:48px;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:0 60px;z-index:4}
 .hero-scroll-hint{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.28);display:flex;align-items:center;gap:10px}
 .hero-scroll-hint::before{content:'';display:block;width:40px;height:1px;background:rgba(255,255,255,.2)}
@@ -532,7 +532,16 @@ footer{background:var(--black);padding:80px 60px 40px}
 @media(max-width:560px){
   #demo-kebab .kbb-hero-script{font-size:64px}
   #demo-kebab .kbb-feats{gap:18px}
-  #demo-kebab .kbb-grid{grid-template-columns:1fr}
+  #demo-kebab .kbb-nav{gap:10px;padding:12px 14px}
+  #demo-kebab .kbb-order{padding:9px 14px;font-size:11px;gap:6px}
+  #demo-kebab .kbb-grid{grid-template-columns:repeat(3,1fr);gap:8px}
+  #demo-kebab .kbb-card-body{padding:9px 7px}
+  #demo-kebab .kbb-card-body h3{font-size:11px;letter-spacing:0;margin-bottom:3px}
+  #demo-kebab .kbb-card-body p{display:none}
+  #demo-kebab .kbb-card-foot{flex-direction:column;align-items:flex-start;gap:7px}
+  #demo-kebab .kbb-price{font-size:15px}
+  #demo-kebab .kbb-add{width:30px;height:30px;font-size:17px;align-self:flex-end;margin-top:-26px}
+  #demo-kebab .kbb-badge-top{padding:3px 7px;font-size:8px;top:6px;right:6px;gap:3px}
   #demo-kebab .kbb-cats{grid-template-columns:1fr}
   #demo-kebab .kbb-cat{border-right:none;border-bottom:1px solid rgba(255,255,255,.08)}
 }
@@ -767,7 +776,16 @@ footer{background:var(--black);padding:80px 60px 40px}
   #demo-bella .bn-grid,#demo-bella .bn-reviews{grid-template-columns:1fr 1fr}
 }
 @media(max-width:560px){
-  #demo-bella .bn-grid,#demo-bella .bn-reviews{grid-template-columns:1fr}
+  #demo-bella .bn-nav{gap:10px;padding:12px 16px}
+  #demo-bella .bn-book-btn{padding:9px 16px;font-size:11px}
+  #demo-bella .bn-grid{grid-template-columns:repeat(3,1fr);gap:8px}
+  #demo-bella .bn-card-body{padding:9px 8px}
+  #demo-bella .bn-card-body h3{font-size:13px;margin-bottom:3px}
+  #demo-bella .bn-card-body p{display:none}
+  #demo-bella .bn-card-foot{flex-wrap:wrap;gap:5px}
+  #demo-bella .bn-price{font-size:15px}
+  #demo-bella .bn-tag-veg{font-size:8px;padding:2px 7px}
+  #demo-bella .bn-reviews{grid-template-columns:1fr}
   #demo-bella .bn-row{grid-template-columns:1fr}
 }
 /* ════ DÉMO : MAISON LILA (e-commerce élégant) ════ */
@@ -904,7 +922,13 @@ footer{background:var(--black);padding:80px 60px 40px}
   #demo-lila .li-grid,#demo-lila .li-reviews{grid-template-columns:1fr 1fr}
 }
 @media(max-width:560px){
-  #demo-lila .li-grid,#demo-lila .li-reviews{grid-template-columns:1fr}
+  #demo-lila .li-grid{grid-template-columns:repeat(3,1fr);gap:8px}
+  #demo-lila .li-prod-body{padding:9px 6px}
+  #demo-lila .li-prod-body h3{font-size:12px;margin-bottom:3px}
+  #demo-lila .li-price{font-size:13px;margin-bottom:8px}
+  #demo-lila .li-add{padding:7px 4px;font-size:9px;letter-spacing:.3px}
+  #demo-lila .li-cat{font-size:8px;padding:3px 7px;top:7px;left:7px}
+  #demo-lila .li-reviews{grid-template-columns:1fr}
 }
 /* ════ FITCOACH PRO — Dark Premium ════ */
 #demo-fit{
@@ -1161,17 +1185,20 @@ footer{background:var(--black);padding:80px 60px 40px}
   #demo-fit .fit-grid2,#demo-fit .fit-grid2b{grid-template-columns:1fr}
 }
 @media(max-width:680px){
-  #demo-fit .fit-app{grid-template-columns:150px 1fr}
-  #demo-fit .fit-side{padding:46px 8px 14px}
-  #demo-fit .fit-logo{font-size:20px}
-  #demo-fit .fit-nav a{padding:9px 8px;font-size:12px;gap:8px}
-  #demo-fit .fit-nav a svg{width:15px;height:15px}
+  #demo-fit .fit-app{grid-template-columns:1fr}
+  #demo-fit .fit-side{flex-direction:row;align-items:center;height:auto;position:sticky;top:0;padding:8px 10px 8px 70px;overflow-x:auto;border-right:none;border-bottom:1px solid rgba(255,255,255,.08);gap:6px;z-index:6}
+  #demo-fit .fit-logo,#demo-fit .fit-coach-card,#demo-fit .fit-theme{display:none}
+  #demo-fit .fit-nav{flex-direction:row;margin-top:0;gap:6px}
+  #demo-fit .fit-nav a{padding:9px;font-size:0;gap:0;border-radius:10px}
+  #demo-fit .fit-nav a svg{width:20px;height:20px;opacity:1}
+  #demo-fit .fit-nav a.active::before{display:none}
+  #demo-fit .fit-main{min-width:0}
   #demo-fit .fit-stats{grid-template-columns:1fr 1fr}
   #demo-fit .fit-stat .val{font-size:28px}
   #demo-fit .fit-dash{padding:14px}
   #demo-fit .fit-top{padding:14px 16px}
   #demo-fit .fit-view:not(#fitv-dashboard){padding:14px}
-  #demo-fit .fit-week{grid-template-columns:repeat(7,minmax(66px,1fr));overflow-x:auto}
+  #demo-fit .fit-week{grid-template-columns:repeat(7,minmax(56px,1fr));overflow-x:auto}
   #demo-fit .fit-timer-display{font-size:40px}
 }
 /* ════════════ GARAGE CONNECT — Logiciel de gestion ════════════ */
@@ -1408,7 +1435,8 @@ footer{background:var(--black);padding:80px 60px 40px}
 #demo-garage .gc-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 #demo-garage .gc-empty{text-align:center;padding:40px 20px;color:var(--mut);font-size:13px}
 @media(max-width:1040px){#demo-garage .gc-stats{grid-template-columns:repeat(2,1fr)}#demo-garage .gc-g2,#demo-garage .gc-g2b{grid-template-columns:1fr}#demo-garage .gc-kanban{grid-template-columns:1fr}}
-@media(max-width:680px){#demo-garage .gc-app{grid-template-columns:1fr}#demo-garage .gc-side{display:none}#demo-garage .gc-stats{grid-template-columns:1fr}}
+@media(max-width:680px){#demo-garage .gc-app{grid-template-columns:1fr}#demo-garage .gc-side{display:none}#demo-garage .gc-stats{grid-template-columns:repeat(2,1fr)}#demo-garage .gc-main{min-width:0}#demo-garage .gc-content{padding:14px;min-width:0}#demo-garage .gc-top{padding:12px 14px;gap:9px}#demo-garage .gc-search{display:none}#demo-garage .gc-top-sp{flex:1}#demo-garage .gc-card{overflow-x:auto}#demo-garage .gc-table{min-width:460px}#demo-garage .gc-vhead{gap:10px}}
+@media(max-width:380px){#demo-garage .gc-stats{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -1430,7 +1458,7 @@ footer{background:var(--black);padding:80px 60px 40px}
 <section id="hero">
   <h1 class="hero-title" id="heroTitle">BONJOUR, JE SUIS BILLY.</h1>
   <div class="hero-avatar" id="heroAvatar"><img src="assets/avatar.png" alt="Billy – Studio Arc"></div>
-  <p class="hero-sub" id="heroSub">Un créateur de sites web passionné<br>par des projets audacieux et mémorables 🙂</p>
+  <p class="hero-sub" id="heroSub">Un créateur de sites web passionné<br>par des projets audacieux et mémorables.</p>
   <div class="hero-bottom">
     <span class="hero-scroll-hint">Scroll</span>
     <a href="#contact" class="btn-grd"><span>CONTACTEZ-MOI →</span></a>
