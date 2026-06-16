@@ -1,0 +1,14 @@
+# Internal / éditeur
+.claude/
+CLAUDE.md
+
+# Système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dépendances éventuelles
+node_modules/
+
+# Projet séparé (non publié avec le portfolio)
+cassandra/
